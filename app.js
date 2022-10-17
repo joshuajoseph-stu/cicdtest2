@@ -4,7 +4,8 @@ var bodyParser = require("body-parser");
 app.use(express.json());
 app.use(express.urlencoded());
 
-GetRes = { todo_name: "Hello", todo_desc: "World" };
+// GetRes = { todo_name: "Hello", todo_desc: "PM2" };
+GetRes = "Hello PM2 17-10-22";
 
 app.get("/", (req, res) => {
   res.send(GetRes);
